@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+	color: #222;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	line-height: 1;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-image: url('assets/img/2dd725c8-5e6e-11ee-acc3-b2623b589497.1220x600 (1).jpeg');
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+ }
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+[class*=__container] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer {
+  margin-top: auto;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  line-height: 300%;
+  background: antiquewhite;
+  width: 100%;
+}
+
+.wrapper {
+   position: relative;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+
+}

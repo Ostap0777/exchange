@@ -16,14 +16,6 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
 	this.isModalVisible = true;
-    this.service.getAll().subscribe(
-      data => {
-        this.current = data;
-		  console.log(this.current)
-      },
-      error => {
-        console.error('Error fetching data:', error);
-      }
-    );
+  
   }
 }

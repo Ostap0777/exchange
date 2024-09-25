@@ -1,15 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceService {
 
-	url = 'https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=5'
-  constructor(private http: HttpClient) { }
+	private apiUrl = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 
-  getAll() {
-	return this.http.get(this.url)
-  }
+	constructor(private http: HttpClient) { }
+ 
+	getCurrencies(): Observable<any> {
+	  return this.http.get(this.apiUrl);
+	}
 }

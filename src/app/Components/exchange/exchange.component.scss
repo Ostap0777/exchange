@@ -7,15 +7,17 @@
 	&__section {
 		width: 100%;
 		padding: 30px;
-		background-image: repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(45deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px);
+		background-image: 
+			repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px, transparent 1px, transparent 12px),
+			repeating-linear-gradient(45deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px, transparent 1px, transparent 12px);
 		border-radius: 24px;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 		text-align: center;
 		transition: all 0.3s ease;
 
 		&:hover {
-			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); 
-			transform: translateY(-5px); 
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+			transform: translateY(-5px);
 		}
 	}
 
@@ -31,19 +33,19 @@
 	&__converter {
 		display: flex;
 		justify-content: space-between;
-		gap: 50px;
+		gap: 20px;
 
 		.converter__section {
 			flex: 1;
 			margin: 0 10px;
-			background-color: rgba(255, 255, 255, 0.6);
-			border-radius: 16px; 
+			background-color: rgba(255, 255, 255, 0.8); 
+			border-radius: 16px;
 			padding: 20px;
 			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 			&:hover {
-				transform: translateY(-7px); 
+				transform: translateY(-7px);
 				box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 			}
 
@@ -52,10 +54,9 @@
 					display: block;
 					margin-bottom: 10px;
 					font-size: 20px;
-					letter-spacing: 2px;
-					padding: 10px 0px;
+					letter-spacing: 1px;
 					font-weight: 500;
-					color: #444; 
+					color: #444;
 				}
 
 				&__input, &__select {
@@ -63,7 +64,7 @@
 					padding: 14px;
 					font-size: 18px;
 					border: 2px solid #e0e0e0;
-					border-radius: 12px; 
+					border-radius: 12px;
 					background-color: #f9f9f9;
 					transition: all 0.3s ease;
 					margin-bottom: 20px;
@@ -71,6 +72,7 @@
 					&:focus {
 						border-color: #8f94fb; 
 						background-color: #ffffff;
+						outline: none; 
 					}
 				}
 			}

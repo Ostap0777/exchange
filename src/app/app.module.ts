@@ -8,6 +8,7 @@ import { MainPageComponent } from '../app/Components/main-page/main-page.compone
 import { HttpClientModule } from '@angular/common/http';
 import { ModalComponent } from './Components/modal/modal.component';
 import { ExchangeComponent } from './Components/exchange/exchange.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ExchangeComponent } from './Components/exchange/exchange.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-	 HttpClientModule
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
